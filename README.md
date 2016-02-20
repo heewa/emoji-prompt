@@ -71,6 +71,6 @@ GIT_PROMPT_START_USER="_LAST_COMMAND_INDICATOR_\$(CURRENT_EMOJI_RAW)$EMOJI_SUFF
 IX${White}${Time12a}${Yellow}${PathShort}${ResetColor}"
 ```
 
-and now my prompt looks like:
+And now my prompt looks like:
 
 ![emoji-git-prompt](https://cloud.githubusercontent.com/assets/232685/13192614/eb77c564-d73b-11e5-86d2-27552f55ffce.png)
