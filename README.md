@@ -38,21 +38,27 @@ Drop this file somewhere, like your home dir:
 curl 'https://github.com/heewa/emoji-prompt/blob/master/emoji-prompt.sh' > ~/.emoji-prompt.sh
 ```
 
-Then getting it into your prompt depends on how you're defining it already. If
-you're setting a `$PS1` env var in `~/.bashrc`, add a bash function call to
-`CURRENT_EMOJI`, like:
+If you import that into your `~/.bashrc`, it'll give you a bash function
+`CURRENT_EMOJI` that you can incorporate into your prompt. Because the emoji
+change over time, you can't just set `$PS1` env var. You need to define a bash
+function to set it. For example, in your `~/.bashrc`:
 
 ```bash
-export PS1="$(CURRENT_EMOJI) $ "
+__UPDATE_PROMPT() {
+    PS1="$(CURRENT_EMOJI) \u@\h $ "
+}
+export PROMPT_COMMAND="__UPDATE_PROMPT"
+```
+
+Which will give you prompts like:
+
+```bash
+🍹 heewa@airwa3 $
 ```
 
 If you don't want the dark comma-ish suffix, or want to add it yourself, you
 can get just the emoji with `$(CURRENT_EMOJI_RAW)` and the suffix with
 `$EMOJI_SUFFIX`, used like:
-
-```bash
-export PS1="$(CURRENT_EMOJI_RAW)$EMOJI_SUFFIX $ "
-```
 
 If you're already using a function, you can similarly add it to that. For example,
 I customized [bash-git-prompt](https://github.com/magicmonty/bash-git-prompt) to
