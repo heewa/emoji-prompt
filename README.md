@@ -35,7 +35,7 @@ Using
 Drop this file somewhere, like your home dir:
 
 ```bash
-curl 'https://github.com/heewa/emoji-prompt/blob/master/emoji-prompt.sh' > ~/.emoji-prompt.sh
+curl 'https://raw.githubusercontent.com/heewa/emoji-prompt/master/emoji-prompt.sh' > ~/.emoji-prompt.sh
 ```
 
 If you import that into your `~/.bashrc`, it'll give you a bash function
