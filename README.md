@@ -44,6 +44,7 @@ change over time, you can't just set `$PS1` env var. You need to define a bash
 function to set it. For example, in your `~/.bashrc`:
 
 ```bash
+. ~/.emoji-prompt.sh
 __UPDATE_PROMPT() {
     PS1="$(CURRENT_EMOJI) \u@\h $ "
 }
