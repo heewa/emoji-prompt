@@ -48,8 +48,8 @@ RAND_ELEMENT_BY_TIME () {
 # NOTE: it's important that emojis are separated by space, and the last one
 # isn't followed by a space.
 HOURS_IN_MONTH=$(( 24 * 31 ))
-MORNING_EMOJI=$(SHUFFLE_LIST $HOURS_IN_MONTH 🌄 ☀️ ☕️ 🍳 🍞 🐓 🐔)
-DAY_EMOJI=$(SHUFFLE_LIST $HOURS_IN_MONTH 🌲 🌳 🌴 🌵 🌷 🌺 🌸 🌹 🌻 🌼 💐 🌾 🌿 🍀 🍁 🍂 🍃 🍄 ☀️ ⛅️ ☁️ ☔️ 🌈 🌊 🗻 🌍 🌞 💻 🚽 📚 ✂️ 🔪)
+MORNING_EMOJI=$(SHUFFLE_LIST $HOURS_IN_MONTH 🌄 ☕️ 🍳 🍞 🐓 🐔)
+DAY_EMOJI=$(SHUFFLE_LIST $HOURS_IN_MONTH 🌲 🌳 🌴 🌵 🌷 🌺 🌸 🌹 🌻 🌼 💐 🌾 🌿 🍀 🍁 🍂 🍃 🍄 ⛅️ ☔️ 🌈 🌊 🗻 🌍 🌞 💻 🚽 📚 🔪 )
 FOOD_EMOJI=$(SHUFFLE_LIST $HOURS_IN_MONTH 🍔 🍕 🍖 🍗 🍘 🍙 🍚 🍛 🍜 🍝 🍞 🍟 🍣 🍤 🍥 🍱 🍲 🍳 🍴)
 SNACK_EMOJI=$(SHUFFLE_LIST $HOURS_IN_MONTH 🍏 🍇 🍉 🍊 🍌 🍍 🍑 🍒 🍓 🍡 🍢 🍦 🍧 🍨 🍩 🍪 🍫 🍬 🍭 🍮 🍰)
 DRINK_EMOJI=$(SHUFFLE_LIST $HOURS_IN_MONTH 🍷 🍸 🍶 🍹 🍺 🍻)
