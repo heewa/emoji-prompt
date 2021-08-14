@@ -14,13 +14,14 @@ SHUFFLE_LIST() {
         local PY
         read -d '' PY <<EOF
 # -*- coding: UTF-8 -*-
+from __future__ import print_function
 import random
 e='${things[@]}'.strip().split()
 all=[]
 while len(all) < $num:
     random.shuffle(e)
     all += e
-print ' '.join(all[:$num])
+print(' '.join(all[:$num]))
 EOF
         echo $(echo "$PY" | python)
     fi
