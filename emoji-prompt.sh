@@ -40,7 +40,7 @@ RAND_ELEMENT_BY_TIME () {
         # Index by hour, day, month, to avoid loops. But that's best if list is
         # long or the repeat-sequence is jittered. Use bash to eval the
         # expression, cuz some remote systems don't have bc.
-        local hour_of_year=$[$(date '+ ( %H + 24*(%_d-1) + 24*31*(%m-1) )')]
+        local hour_of_year=$[$(date '+ ( %_H + 24*(%_d-1) + 24*31*(%_m-1) )')]
         local index=$(( $hour_of_year % $len ))
         echo "${things[$index]}"
     fi
